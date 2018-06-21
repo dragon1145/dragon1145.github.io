@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+
+      
+                <title>Mountain platformer</title>
+		<link type="text/css" rel="stylesheet" href="css/simple.css"/>
+		<meta charset="utf-8"/>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+alert("help the person beat the maze in game.")
+$('document').ready(function() {
+  $( "#platform" ).animate({
+    opacity: 0.25,
+    left: "+=650",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+  
+
+$( "#man" ).animate({
+    opacity: 0.25,
+    left: "+=650",
+    
+  }, 5000, function() {
+    $( "#man" ).animate({
+    opacity: 0.25,
+    top: "+=900",
+    
+  }, 5000, function() {
+    // Animation complete.
+  });
+  });
+
+  $( "#platform2" ).animate({
+    opacity: 0.25,
+    left: "+=650",
+    height: "200"
+  }, 5000, function() {
+    // Animation complete.
+  });
+
+});
+</script>
+	</head>
+	<body>
+	     <input type="button" value="play" onclick="startGame()";/>
+             <div id="board">
+             </div>
+          <h1>Instructions:arrowkeys to move,space to attack.</h1>
+<p><img src="https://uxfactor.files.wordpress.com/2012/12/stick-figure1.jpg" width="200" id="man" style="position:absolute;left:0px;top:120px;"></p>
+<p><img src="https://phaser.io/content/tutorials/coding-tips-003/ice-platform.png" width="200" style="position:absolute;left:0px;top:250px;" id="platform"></p>	
+<p><img src="http://devmag.org.za/blog/wp-content/uploads/2012/07/super-mario-level-wallpaper-1680-x-1050.jpg" width="2000"></p>        
+<input type="button" value="Play" onclick="startGame()";/>
+<p><img src="https://phaser.io/content/tutorials/coding-tips-003/platform.png" width="200"></p>
+<p><img src="https://projectsandstormacc.files.wordpress.com/2012/02/rock-platforms.jpg" width="2000"></p>         
+<p><img src="http://www.photonstorm.com/wp-content/uploads/2015/01/ice-platform.png" width="200"></p>         
+                 </body>
+</html>
+   <script>  
+      gameLoop();
+   }
+   function gameLoop() {
+      alert("game over!");
+      setTimeout(gameLoop, 3000);
+  </script>
+</head>
+<body>
+   <div id="number">
+   </div>
+      <script>
+         updateCount();
+      </script>
+</body>
+</html>  
+   </script>
+

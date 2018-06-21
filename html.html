@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<meta charset="utf-8"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
+
+<style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+</style>
+	</head>
+
+<body>
+<canvas class="background"></canvas>
+<script>
+var particles;
+
+particles = Particles.init({
+  selector: ".background",
+  color: ["#DA0463", "#404B69", "#DBEDF3"],
+  connectParticles: true,
+  speed: 5
+});
+
+function pause() {
+  particles.pauseAnimation();
+}
+
+function resume() {
+  particles.resumeAnimation();
+}
+
+</script>
+<button onclick="pause()">Pause Animation</button>
+ <button onclick="resume()">Resume Animation</button>
+</body>
